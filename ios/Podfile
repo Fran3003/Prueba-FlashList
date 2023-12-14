@@ -38,6 +38,8 @@ target 'Prueba' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
+  
+  pod 'RNFlashList', :path => '../node_modules/@shopify/flash-list'
 
   target 'PruebaTests' do
     inherit! :complete
